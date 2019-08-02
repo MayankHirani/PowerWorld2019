@@ -1,0 +1,33 @@
+Summary of different folders and modules
+Mayank Hirani
+
+
+- Timing Functions: All the files that time various SimAuto functions
+	-- Functions: The files where the functions are timed
+	-- Cases: The cases that the functions are called on
+
+- Function Demos: Examples of combinations different SimAuto functions
+	-- auto_insert_options: Contingency options
+	-- function_example_1: Simple setup
+	-- function_example_2: Get/ChangeParametersMultipleElement
+	-- function_example_3: GetParametersMultipleElementRect
+	-- function_example_4: Various SimAuto functions
+	-- function_example_5: Various SimAuto data attributes
+
+- Case Studies: The 2 main case studies made in the last week
+	-- Case Study Transaction: Case Study 1 that analyzes the effect of a transaction
+	-- Case Study Load Scale: Case Study 2 that analyzes the results of contingency tests under different load scaling
+
+- Timing Demo: The example file for timing any given function
+	-- timing_template: The template in which users can paste their code
+	-- timing_template_example: An example of using the template
+
+- Other: Unnecessary files from early on
+
+
+Required Files
+------------------------------------------
+- case_study_1: B7OPF.pwb,case_study_1_contingencies.aux, case_study_1_transaction.aux
+- case_study_2: MultCTG_B7FLAT.pwb, case_study_2_contingencies.aux
+- Timing Functions: B7SCOPF.pwb, WSCC 9 bus.pwb, ACTIVSg200.pwb, ACTIVSg500.pwb, ACTIVSg2000.pwb, ACTIVSg10k.pwb, ACTIVSg25k.pwb, ACTIVSg70k.pwb, PSC_37Bus_SCOPF.pwb, PSC_2000_DCOPF.pwb
+- Function Demos: B7FLAT.pwb

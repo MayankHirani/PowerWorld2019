@@ -1,0 +1,33 @@
+// An Aux file created 6/7/19 to learn how to use SimAuto
+
+
+
+SCRIPT Solve
+{
+
+// Clear the message log before program runs
+LogClear;
+
+// Open the B7FLAT case and its oneline
+OpenCase("B7FLAT_mayank.pwb", PWB);
+OpenOneline("B7FLAT_mayank.pwd", "", NO, YES);
+
+// Load the options for the contingency solve
+LoadAux("autoinsert_options.aux");
+
+// Autoinsert the contingency definitions (How to solve the contingency)
+CTGAutoInsert;
+
+// Solve the case, then solve the contingency
+SolvePowerFlow(RECTNEWT);
+CTGSolveAll;
+
+// Write the resuls of a new contingency test to a new file
+CTGWriteFilePTI("B7FLAT_results", name12, NO);
+
+LogAdd("This is a test message from me");
+
+LogSave("B7FLAT_log", NO);
+
+}
+

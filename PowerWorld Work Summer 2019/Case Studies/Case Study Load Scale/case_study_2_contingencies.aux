@@ -1,0 +1,213 @@
+//--------------------------------------------------------------------------------
+// The following describes all double-line outages in this system
+//--------------------------------------------------------------------------------
+DATA (CONTINGENCY, [CTGLabel,CTGSkip], AUXDEF, YES)
+{
+"L_1-2C1L_1-3C1" "NO"
+"L_1-2C1L_2-3C1" "NO"
+"L_1-2C1L_2-4C1" "NO"
+"L_1-2C1L_2-5C1" "NO"
+"L_1-2C1L_2-6C1" "NO"
+"L_1-2C1L_3-4C1" "NO"
+"L_1-2C1L_4-5C1" "NO"
+"L_1-2C1L_7-5C1" "NO"
+"L_1-2C1L_6-7C1" "NO"
+"L_1-2C1L_6-7C2" "NO"
+"L_1-3C1L_2-3C1" "NO"
+"L_1-3C1L_2-4C1" "NO"
+"L_1-3C1L_2-5C1" "NO"
+"L_1-3C1L_2-6C1" "NO"
+"L_1-3C1L_3-4C1" "NO"
+"L_1-3C1L_4-5C1" "NO"
+"L_1-3C1L_7-5C1" "NO"
+"L_1-3C1L_6-7C1" "NO"
+"L_1-3C1L_6-7C2" "NO"
+"L_2-3C1L_2-4C1" "NO"
+"L_2-3C1L_2-5C1" "NO"
+"L_2-3C1L_2-6C1" "NO"
+"L_2-3C1L_3-4C1" "NO"
+"L_2-3C1L_4-5C1" "NO"
+"L_2-3C1L_7-5C1" "NO"
+"L_2-3C1L_6-7C1" "NO"
+"L_2-3C1L_6-7C2" "NO"
+"L_2-4C1L_2-5C1" "NO"
+"L_2-4C1L_2-6C1" "NO"
+"L_2-4C1L_3-4C1" "NO"
+"L_2-4C1L_4-5C1" "NO"
+"L_2-4C1L_7-5C1" "NO"
+"L_2-4C1L_6-7C1" "NO"
+"L_2-4C1L_6-7C2" "NO"
+"L_2-5C1L_2-6C1" "NO"
+"L_2-5C1L_3-4C1" "NO"
+"L_2-5C1L_4-5C1" "NO"
+"L_2-5C1L_7-5C1" "NO"
+"L_2-5C1L_6-7C1" "NO"
+"L_2-5C1L_6-7C2" "NO"
+"L_2-6C1L_3-4C1" "NO"
+"L_2-6C1L_4-5C1" "NO"
+"L_2-6C1L_7-5C1" "NO"
+"L_2-6C1L_6-7C1" "NO"
+"L_2-6C1L_6-7C2" "NO"
+"L_3-4C1L_4-5C1" "NO"
+"L_3-4C1L_7-5C1" "NO"
+"L_3-4C1L_6-7C1" "NO"
+"L_3-4C1L_6-7C2" "NO"
+"L_4-5C1L_7-5C1" "NO"
+"L_4-5C1L_6-7C1" "NO"
+"L_4-5C1L_6-7C2" "NO"
+"L_7-5C1L_6-7C1" "NO"
+"L_7-5C1L_6-7C2" "NO"
+"L_6-7C1L_6-7C2" "NO"
+}
+
+DATA (CONTINGENCYELEMENT, [CTGLabel,WhoAmI:1,FilterName,ActionStatus], AUXDEF, YES)
+{
+"L_1-2C1L_1-3C1" "BRANCH 1 2 1  OPEN" "" "CHECK"
+"L_1-2C1L_1-3C1" "BRANCH 1 3 1  OPEN" "" "CHECK"
+"L_1-2C1L_2-3C1" "BRANCH 1 2 1  OPEN" "" "CHECK"
+"L_1-2C1L_2-3C1" "BRANCH 2 3 1  OPEN" "" "CHECK"
+"L_1-2C1L_2-4C1" "BRANCH 1 2 1  OPEN" "" "CHECK"
+"L_1-2C1L_2-4C1" "BRANCH 2 4 1  OPEN" "" "CHECK"
+"L_1-2C1L_2-5C1" "BRANCH 1 2 1  OPEN" "" "CHECK"
+"L_1-2C1L_2-5C1" "BRANCH 2 5 1  OPEN" "" "CHECK"
+"L_1-2C1L_2-6C1" "BRANCH 1 2 1  OPEN" "" "CHECK"
+"L_1-2C1L_2-6C1" "BRANCH 2 6 1  OPEN" "" "CHECK"
+"L_1-2C1L_3-4C1" "BRANCH 1 2 1  OPEN" "" "CHECK"
+"L_1-2C1L_3-4C1" "BRANCH 3 4 1  OPEN" "" "CHECK"
+"L_1-2C1L_4-5C1" "BRANCH 1 2 1  OPEN" "" "CHECK"
+"L_1-2C1L_4-5C1" "BRANCH 4 5 1  OPEN" "" "CHECK"
+"L_1-2C1L_7-5C1" "BRANCH 1 2 1  OPEN" "" "CHECK"
+"L_1-2C1L_7-5C1" "BRANCH 7 5 1  OPEN" "" "CHECK"
+"L_1-2C1L_6-7C1" "BRANCH 1 2 1  OPEN" "" "CHECK"
+"L_1-2C1L_6-7C1" "BRANCH 6 7 1  OPEN" "" "CHECK"
+"L_1-2C1L_6-7C2" "BRANCH 1 2 1  OPEN" "" "CHECK"
+"L_1-2C1L_6-7C2" "BRANCH 6 7 2  OPEN" "" "CHECK"
+"L_1-3C1L_2-3C1" "BRANCH 1 3 1  OPEN" "" "CHECK"
+"L_1-3C1L_2-3C1" "BRANCH 2 3 1  OPEN" "" "CHECK"
+"L_1-3C1L_2-4C1" "BRANCH 1 3 1  OPEN" "" "CHECK"
+"L_1-3C1L_2-4C1" "BRANCH 2 4 1  OPEN" "" "CHECK"
+"L_1-3C1L_2-5C1" "BRANCH 1 3 1  OPEN" "" "CHECK"
+"L_1-3C1L_2-5C1" "BRANCH 2 5 1  OPEN" "" "CHECK"
+"L_1-3C1L_2-6C1" "BRANCH 1 3 1  OPEN" "" "CHECK"
+"L_1-3C1L_2-6C1" "BRANCH 2 6 1  OPEN" "" "CHECK"
+"L_1-3C1L_3-4C1" "BRANCH 1 3 1  OPEN" "" "CHECK"
+"L_1-3C1L_3-4C1" "BRANCH 3 4 1  OPEN" "" "CHECK"
+"L_1-3C1L_4-5C1" "BRANCH 1 3 1  OPEN" "" "CHECK"
+"L_1-3C1L_4-5C1" "BRANCH 4 5 1  OPEN" "" "CHECK"
+"L_1-3C1L_7-5C1" "BRANCH 1 3 1  OPEN" "" "CHECK"
+"L_1-3C1L_7-5C1" "BRANCH 7 5 1  OPEN" "" "CHECK"
+"L_1-3C1L_6-7C1" "BRANCH 1 3 1  OPEN" "" "CHECK"
+"L_1-3C1L_6-7C1" "BRANCH 6 7 1  OPEN" "" "CHECK"
+"L_1-3C1L_6-7C2" "BRANCH 1 3 1  OPEN" "" "CHECK"
+"L_1-3C1L_6-7C2" "BRANCH 6 7 2  OPEN" "" "CHECK"
+"L_2-3C1L_2-4C1" "BRANCH 2 3 1  OPEN" "" "CHECK"
+"L_2-3C1L_2-4C1" "BRANCH 2 4 1  OPEN" "" "CHECK"
+"L_2-3C1L_2-5C1" "BRANCH 2 3 1  OPEN" "" "CHECK"
+"L_2-3C1L_2-5C1" "BRANCH 2 5 1  OPEN" "" "CHECK"
+"L_2-3C1L_2-6C1" "BRANCH 2 3 1  OPEN" "" "CHECK"
+"L_2-3C1L_2-6C1" "BRANCH 2 6 1  OPEN" "" "CHECK"
+"L_2-3C1L_3-4C1" "BRANCH 2 3 1  OPEN" "" "CHECK"
+"L_2-3C1L_3-4C1" "BRANCH 3 4 1  OPEN" "" "CHECK"
+"L_2-3C1L_4-5C1" "BRANCH 2 3 1  OPEN" "" "CHECK"
+"L_2-3C1L_4-5C1" "BRANCH 4 5 1  OPEN" "" "CHECK"
+"L_2-3C1L_7-5C1" "BRANCH 2 3 1  OPEN" "" "CHECK"
+"L_2-3C1L_7-5C1" "BRANCH 7 5 1  OPEN" "" "CHECK"
+"L_2-3C1L_6-7C1" "BRANCH 2 3 1  OPEN" "" "CHECK"
+"L_2-3C1L_6-7C1" "BRANCH 6 7 1  OPEN" "" "CHECK"
+"L_2-3C1L_6-7C2" "BRANCH 2 3 1  OPEN" "" "CHECK"
+"L_2-3C1L_6-7C2" "BRANCH 6 7 2  OPEN" "" "CHECK"
+"L_2-4C1L_2-5C1" "BRANCH 2 4 1  OPEN" "" "CHECK"
+"L_2-4C1L_2-5C1" "BRANCH 2 5 1  OPEN" "" "CHECK"
+"L_2-4C1L_2-6C1" "BRANCH 2 4 1  OPEN" "" "CHECK"
+"L_2-4C1L_2-6C1" "BRANCH 2 6 1  OPEN" "" "CHECK"
+"L_2-4C1L_3-4C1" "BRANCH 2 4 1  OPEN" "" "CHECK"
+"L_2-4C1L_3-4C1" "BRANCH 3 4 1  OPEN" "" "CHECK"
+"L_2-4C1L_4-5C1" "BRANCH 2 4 1  OPEN" "" "CHECK"
+"L_2-4C1L_4-5C1" "BRANCH 4 5 1  OPEN" "" "CHECK"
+"L_2-4C1L_7-5C1" "BRANCH 2 4 1  OPEN" "" "CHECK"
+"L_2-4C1L_7-5C1" "BRANCH 7 5 1  OPEN" "" "CHECK"
+"L_2-4C1L_6-7C1" "BRANCH 2 4 1  OPEN" "" "CHECK"
+"L_2-4C1L_6-7C1" "BRANCH 6 7 1  OPEN" "" "CHECK"
+"L_2-4C1L_6-7C2" "BRANCH 2 4 1  OPEN" "" "CHECK"
+"L_2-4C1L_6-7C2" "BRANCH 6 7 2  OPEN" "" "CHECK"
+"L_2-5C1L_2-6C1" "BRANCH 2 5 1  OPEN" "" "CHECK"
+"L_2-5C1L_2-6C1" "BRANCH 2 6 1  OPEN" "" "CHECK"
+"L_2-5C1L_3-4C1" "BRANCH 2 5 1  OPEN" "" "CHECK"
+"L_2-5C1L_3-4C1" "BRANCH 3 4 1  OPEN" "" "CHECK"
+"L_2-5C1L_4-5C1" "BRANCH 2 5 1  OPEN" "" "CHECK"
+"L_2-5C1L_4-5C1" "BRANCH 4 5 1  OPEN" "" "CHECK"
+"L_2-5C1L_7-5C1" "BRANCH 2 5 1  OPEN" "" "CHECK"
+"L_2-5C1L_7-5C1" "BRANCH 7 5 1  OPEN" "" "CHECK"
+"L_2-5C1L_6-7C1" "BRANCH 2 5 1  OPEN" "" "CHECK"
+"L_2-5C1L_6-7C1" "BRANCH 6 7 1  OPEN" "" "CHECK"
+"L_2-5C1L_6-7C2" "BRANCH 2 5 1  OPEN" "" "CHECK"
+"L_2-5C1L_6-7C2" "BRANCH 6 7 2  OPEN" "" "CHECK"
+"L_2-6C1L_3-4C1" "BRANCH 2 6 1  OPEN" "" "CHECK"
+"L_2-6C1L_3-4C1" "BRANCH 3 4 1  OPEN" "" "CHECK"
+"L_2-6C1L_4-5C1" "BRANCH 2 6 1  OPEN" "" "CHECK"
+"L_2-6C1L_4-5C1" "BRANCH 4 5 1  OPEN" "" "CHECK"
+"L_2-6C1L_7-5C1" "BRANCH 2 6 1  OPEN" "" "CHECK"
+"L_2-6C1L_7-5C1" "BRANCH 7 5 1  OPEN" "" "CHECK"
+"L_2-6C1L_6-7C1" "BRANCH 2 6 1  OPEN" "" "CHECK"
+"L_2-6C1L_6-7C1" "BRANCH 6 7 1  OPEN" "" "CHECK"
+"L_2-6C1L_6-7C2" "BRANCH 2 6 1  OPEN" "" "CHECK"
+"L_2-6C1L_6-7C2" "BRANCH 6 7 2  OPEN" "" "CHECK"
+"L_3-4C1L_4-5C1" "BRANCH 3 4 1  OPEN" "" "CHECK"
+"L_3-4C1L_4-5C1" "BRANCH 4 5 1  OPEN" "" "CHECK"
+"L_3-4C1L_7-5C1" "BRANCH 3 4 1  OPEN" "" "CHECK"
+"L_3-4C1L_7-5C1" "BRANCH 7 5 1  OPEN" "" "CHECK"
+"L_3-4C1L_6-7C1" "BRANCH 3 4 1  OPEN" "" "CHECK"
+"L_3-4C1L_6-7C1" "BRANCH 6 7 1  OPEN" "" "CHECK"
+"L_3-4C1L_6-7C2" "BRANCH 3 4 1  OPEN" "" "CHECK"
+"L_3-4C1L_6-7C2" "BRANCH 6 7 2  OPEN" "" "CHECK"
+"L_4-5C1L_7-5C1" "BRANCH 4 5 1  OPEN" "" "CHECK"
+"L_4-5C1L_7-5C1" "BRANCH 7 5 1  OPEN" "" "CHECK"
+"L_4-5C1L_6-7C1" "BRANCH 4 5 1  OPEN" "" "CHECK"
+"L_4-5C1L_6-7C1" "BRANCH 6 7 1  OPEN" "" "CHECK"
+"L_4-5C1L_6-7C2" "BRANCH 4 5 1  OPEN" "" "CHECK"
+"L_4-5C1L_6-7C2" "BRANCH 6 7 2  OPEN" "" "CHECK"
+"L_7-5C1L_6-7C1" "BRANCH 7 5 1  OPEN" "" "CHECK"
+"L_7-5C1L_6-7C1" "BRANCH 6 7 1  OPEN" "" "CHECK"
+"L_7-5C1L_6-7C2" "BRANCH 7 5 1  OPEN" "" "CHECK"
+"L_7-5C1L_6-7C2" "BRANCH 6 7 2  OPEN" "" "CHECK"
+"L_6-7C1L_6-7C2" "BRANCH 6 7 1  OPEN" "" "CHECK"
+"L_6-7C1L_6-7C2" "BRANCH 6 7 2  OPEN" "" "CHECK"
+}
+
+//--------------------------------------------------------------------------------
+// Set the limit monitoring so that flows over 50% are stored as violations
+//--------------------------------------------------------------------------------
+DATA (LIMITSET, [LSName,LSLinePercent,LSPULow,LSPUHigh])
+{
+"Default"  50.0  0.90  1.10
+}
+
+//--------------------------------------------------------------------------------
+// The following is a customization of columns for the Contingency Violation List
+//--------------------------------------------------------------------------------
+DATA (DATAGRID, [DataGridName,BGDisplayFilter,FilterName,NonDefaultFont,CaseInfoRowHeight,FontName,
+                 FontStyles,SOFontSize,FontColor,VariableName,ConditionType,ViewZoomLevel,FrozenColumns])
+{
+"ViolationContingencyAll" "YES" "" "NO "     13 "Tahoma" ""      8      0 "" "High To Low" 100.00 -1
+   <SUBDATA ColumnInfo>
+     "CTGLabel"        140  8  1
+     "OwnerName"       140  8  1
+     "OwnerName:1"     140  8  1
+     "CustomString:2"  140  8  1
+     "BusNum"          140  8  1
+     "BusNum:1"        140  8  1
+     "BusName"         140  8  1
+     "BusName:1"       140  8  1
+     "BusNomVolt:1"    140  8  1
+     "BusNomVolt:2"    140  8  1
+     "LineCircuit"     140  8  1
+     "OwnerName:2"     140  8  1
+     "OwnerName:3"     140  8  1
+     "LimViolCat"       50  8  2
+     "LimViolLimit"     50  8  2
+     "LimViolPct"       50  8  2
+     "LimViolValue:2"  140  8  2
+     "LimViolValue"     50  8  2
+     "LimViolPct:1"    140  8  1
+   </SUBDATA>
+}

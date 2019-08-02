@@ -1,0 +1,22 @@
+DATA AddCTG(Contingency, [CTGlabel, CTGskip], YES)
+{
+//Enter data for the contigencies 
+//Since these contingencies don’t exist in the case, PowerWorld
+//will ask if you want to create them. Say Yes.
+//CTG Label		SKIP?
+//--------------------------
+Contingencies 	NO
+
+<SUBDATA CTGElement>
+//The list of contingencies. We always have to enter “” for
+//Model Criteria if we want to say a status.
+//Action			   Model Criteria		Status	
+//-----------------------------------------------------
+"GEN 1 1 OPEN"			""			ALWAYS	
+"BRANCH 1 3 1 OPEN"		""			ALWAYS	
+"BRANCH 3 4 1 OPEN"		""			ALWAYS	
+"BRANCH 6 7 1 OPEN"		""			ALWAYS
+"GEN 4 1 OPEN"			""			ALWAYS
+"BRANCH 6 7 2 OPEN"		""			ALWAYS
+</SUBDATA>
+}
